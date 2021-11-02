@@ -7,7 +7,7 @@ const nuevaString = "Braian";
 const nuevoNum = 7;
 
 // Crea una variable booleana:
-const nuevoBool = 7.7;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -35,29 +35,25 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  let suma = x + y;
-  return suma;
+  return (x + y);
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  let resta = x - y;
-  return resta;
+  return (x - y);
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  let multiplicacion = x * y;
-  return multiplicacion;
+  return (x * y);
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  let division = x / y;
-  return division;
+  return (x / y);
 }
 
 function sonIguales(x, y) {
@@ -74,7 +70,6 @@ function tienenMismaLongitud(str1, str2) {
   // Tu código:
   if(str1.length == str2.length) return true;
   return false;
-
 }
 
 function menosQueNoventa(num) {
@@ -96,8 +91,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  let resto = x % y;
-  return resto;
+  return (x % y);
 }
 
 function esPar(num) {
@@ -120,22 +114,19 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  let alCuadrado = Math.pow(num,2);
-  return alCuadrado;
+  return (Math.pow(num,2));
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  let alCubo = Math.pow(num,3);
-  return alCubo;
+  return (Math.pow(num,3));
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  let elevado = Math.pow(num,exponent);
-  return elevado;
+  return (Math.pow(num,exponent));
 }
 
 function redondearNumero(num) {
@@ -161,10 +152,9 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero>0) return "És positivo";
-  else if (numero<0) return "És negativo";
+  if(numero>0) return "Es positivo";
+  else if (numero<0) return "Es negativo";
   else return false;
-  
 }
 
 function agregarSimboloExclamacion(str) {
@@ -185,31 +175,27 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  let hola = "Hola";
-  return hola + ' ' + nombre + '!';
+  return `Hola ${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  let area = alto * ancho;
-  return area;
+  return (alto * ancho);
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  let perimetro = lado *4;
-  return perimetro;
+  return (lado * 4);
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  let areaTri = (base * altura) / 2;
-  return areaTri;
+  return ((base * altura) / 2);
 }
 
 
@@ -217,8 +203,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  let cambio = euro * 1.2;
-  return cambio;
+  return (euro * 1.2);
 }
 
 
@@ -230,7 +215,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if(letra.length > 1 || letra.length == 0) return "Dato incorrecto";
   else if(letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") return "Es vocal";
-  else return "No es vocal";
+  else return "Dato incorrecto";
 }
 
 
